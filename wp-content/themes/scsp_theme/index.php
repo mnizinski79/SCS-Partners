@@ -71,7 +71,14 @@ get_header();
                                         }else if ($position_city){
                                             echo '</h4>';
                                         }
-                                        
+                                        $counter=0;
+                                        $tags = wp_get_post_tags($recent["ID"]);
+                                       
+                                        foreach ( $tags as $tag){
+                                           if ($counter>0){echo " , ";}
+                                            echo $tag->name;
+                                            $counter++;
+                                        }
                                         
                                         echo '</a>';
                                         echo '</li>';
