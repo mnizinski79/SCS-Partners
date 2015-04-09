@@ -1,0 +1,2 @@
+function addIconClass(){var o=$("#content-feeds"),n=o.prev("div.secondary-content");n.addClass("home-icons")}function adjustFooter(){$("footer").css("width","100%")}$("document").ready(function(){addIconClass(),adjustFooter()});
+//# sourceMappingURL=./scsp-main-min.js.map

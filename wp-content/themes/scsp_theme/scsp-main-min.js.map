@@ -1,0 +1,1 @@
+{"version":3,"file":"scsp-main-min.js","sources":["js/scsp-main.js"],"names":["addIconClass","_hook","$","_target","prev","addClass","adjustFooter","css","ready"],"mappings":"AAAA,QAASA,gBACL,GAAIC,GAAQC,EAAE,kBACVC,EAAUF,EAAMG,KAAK,wBAEzBD,GAAQE,SAAS,cAGrB,QAASC,gBACLJ,EAAE,UAAUK,IAAI,QAAQ,QAG5BL,EAAE,YAAYM,MAAM,WAChBR,eACAM"}

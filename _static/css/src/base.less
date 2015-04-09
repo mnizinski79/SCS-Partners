@@ -1,0 +1,51 @@
+@import "vars.less";
+@import "mixins.less";
+@import "grids.less";
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media @small {
+    body {
+        margin: 0;
+        padding: 0;
+        .primary-font;
+        color: @dark-grey;
+        font-size: 1em;
+    }  
+    
+    .fixed-width {
+        margin: 0 @mobile-margin;
+    }
+    
+    p {
+        margin: 0 0 2.0em;
+        line-height: 1.5em;
+        font-size: 1em;
+    }
+}
+
+@media @medium {    
+    
+}
+
+@media @large {
+    .fixed-width {
+        margin: 0 @base-margin;
+    }
+}
+
+@media @extralarge {
+    
+}

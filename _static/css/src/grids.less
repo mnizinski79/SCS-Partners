@@ -1,0 +1,1319 @@
+@import "vars.less";
+@import "mixins.less";
+
+@sm-column-number: 4;
+@md-column-number: 8;
+@lg-column-number: 12;
+@xlg-column-number: 16;
+
+@gutter-space: 1.5%;
+
+.col-container {
+    width: 100% + @gutter-space; 
+    .clear-float;
+}
+    
+
+@media @small {
+    .sm-col-16,
+    .sm-col-15,
+    .sm-col-14,
+    .sm-col-13,
+    .sm-col-12,
+    .sm-col-11,
+    .sm-col-10,
+    .sm-col-9,
+    .sm-col-8,
+    .sm-col-7,
+    .sm-col-6,
+    .sm-col-5,
+    .sm-col-4 {
+        width: percentage(4/@sm-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        position: relative;
+        z-index: 2;
+        
+        .sm-col-4 {
+            width: percentage(4/4);
+        }
+        
+        .sm-col-3 {
+            width: percentage(3/4);
+        }
+        
+        .sm-col-2 {
+            width: percentage(2/4);
+        }
+        
+        .sm-col-1 {
+            width: percentage(1/4);
+        }
+    }
+    
+    .sm-col-3 {
+        width: percentage(3/@sm-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        position: relative;
+        z-index: 2;
+        
+        .sm-col-3 {
+            width: percentage(3/3);
+        }
+        
+        .sm-col-2 {
+            width: percentage(2/3);
+        }
+        
+        .sm-col-1 {
+            width: percentage(1/3);
+        }
+    }
+    
+    .sm-col-2 {
+        width: percentage(2/@sm-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        position: relative;
+        z-index: 2;
+        
+        .sm-col-2 {
+            width: percentage(2/2);
+        }
+        
+        .sm-col-1 {
+            width: percentage(1/2);
+        }
+    }
+    
+    .sm-col-1 {
+        width: percentage(1/@sm-column-number);
+        padding: 0 @gutter-space 0 0; 
+        float: left;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media @medium {    
+    .md-col-16,
+    .md-col-15,
+    .md-col-14,
+    .md-col-13,
+    .md-col-12,
+    .md-col-11,
+    .md-col-10,
+    .md-col-9,
+    .md-col-8 {
+        width: percentage(8/@md-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .md-col-8 {
+            width: percentage(8/8);
+        }
+        
+        .md-col-7 {
+            width: percentage(7/8);
+        }
+        
+        .md-col-6 {
+            width: percentage(6/8);
+        }
+        
+        .md-col-5 {
+            width: percentage(5/8);
+        }
+        
+        .md-col-4 {
+            width: percentage(4/8);
+        }
+        
+        .md-col-3 {
+            width: percentage(3/8);
+        }
+        
+        .md-col-2 {
+            width: percentage(2/8);
+        }
+        
+        .md-col-1 {
+            width: percentage(1/8);
+        }
+    }
+    
+    .md-col-7 {
+        width: percentage(7/@md-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .md-col-7 {
+            width: percentage(7/7);
+        }
+        
+        .md-col-6 {
+            width: percentage(6/7);
+        }
+        
+        .md-col-5 {
+            width: percentage(5/7);
+        }
+        
+        .md-col-4 {
+            width: percentage(4/7);
+        }
+        
+        .md-col-3 {
+            width: percentage(3/7);
+        }
+        
+        .md-col-2 {
+            width: percentage(2/7);
+        }
+        
+        .md-col-1 {
+            width: percentage(1/7);
+        }
+    }
+    
+    .md-col-6 {
+        width: percentage(6/@md-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .md-col-6 {
+            width: percentage(6/6);
+        }
+        
+        .md-col-5 {
+            width: percentage(5/6);
+        }
+        
+        .md-col-4 {
+            width: percentage(4/6);
+        }
+        
+        .md-col-3 {
+            width: percentage(3/6);
+        }
+        
+        .md-col-2 {
+            width: percentage(2/6);
+        }
+        
+        .md-col-1 {
+            width: percentage(1/6);
+        }
+    }
+    
+    .md-col-5 {
+        width: percentage(5/@md-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .md-col-5 {
+            width: percentage(5/5);
+        }
+        
+        .md-col-4 {
+            width: percentage(4/5);
+        }
+        
+        .md-col-3 {
+            width: percentage(3/5);
+        }
+        
+        .md-col-2 {
+            width: percentage(2/5);
+        }
+        
+        .md-col-1 {
+            width: percentage(1/5);
+        }
+    }
+    
+    .md-col-4 {
+        width: percentage(4/@md-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .md-col-4 {
+            width: percentage(4/4);
+        }
+        
+        .md-col-3 {
+            width: percentage(3/4);
+        }
+        
+        .md-col-2 {
+            width: percentage(2/4);
+        }
+        
+        .md-col-1 {
+            width: percentage(1/4);
+        }
+    }
+    
+    .md-col-3 {
+        width: percentage(3/@md-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .md-col-3 {
+            width: percentage(3/3);
+        }
+        
+        .md-col-2 {
+            width: percentage(2/3);
+        }
+        
+        .md-col-1 {
+            width: percentage(1/3);
+        }
+    }
+    
+    .md-col-2 {
+        width: percentage(2/@md-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .md-col-2 {
+            width: percentage(2/2);
+        }
+        
+        .md-col-1 {
+            width: percentage(1/2);
+        }
+    }
+    
+    .md-col-1 {
+        width: percentage(1/@md-column-number);
+        padding: 0 @gutter-space 0 0; 
+        float: left;
+    }
+}
+
+@media @large {
+    .lg-col-16,
+    .lg-col-15,
+    .lg-col-14,
+    .lg-col-13,
+    .lg-col-12 {
+        width: percentage(12/@lg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .lg-col-12 {
+            width: percentage(12/12);
+        }
+        
+        .lg-col-11 {
+            width: percentage(11/12);
+        }
+        
+        .lg-col-10 {
+            width: percentage(10/12);
+        }
+        
+        .lg-col-9 {
+            width: percentage(9/12);
+        }
+        
+        .lg-col-8 {
+            width: percentage(8/12);
+        }
+        
+        .lg-col-7 {
+            width: percentage(7/12);
+        }
+        
+        .lg-col-6 {
+            width: percentage(6/12);
+        }
+        
+        .lg-col-5 {
+            width: percentage(5/12);
+        }
+        
+        .lg-col-4 {
+            width: percentage(4/12);
+        }
+        
+        .lg-col-3 {
+            width: percentage(3/12);
+        }
+        
+        .lg-col-2 {
+            width: percentage(2/12);
+        }
+        
+        .lg-col-1 {
+            width: percentage(1/12);
+        }
+    }
+    
+    .lg-col-11 {
+        width: percentage(11/@lg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .lg-col-11 {
+            width: percentage(11/11);
+        }
+        
+        .lg-col-10 {
+            width: percentage(10/1);
+        }
+        
+        .lg-col-9 {
+            width: percentage(9/11);
+        }
+        
+        .lg-col-8 {
+            width: percentage(8/11);
+        }
+        
+        .lg-col-7 {
+            width: percentage(7/11);
+        }
+        
+        .lg-col-6 {
+            width: percentage(6/11);
+        }
+        
+        .lg-col-5 {
+            width: percentage(5/11);
+        }
+        
+        .lg-col-4 {
+            width: percentage(4/11);
+        }
+        
+        .lg-col-3 {
+            width: percentage(3/11);
+        }
+        
+        .lg-col-2 {
+            width: percentage(2/11);
+        }
+        
+        .lg-col-1 {
+            width: percentage(1/11);
+        }
+    }
+    
+    .lg-col-10 {
+        width: percentage(10/@lg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .lg-col-10 {
+            width: percentage(10/10);
+        }
+        
+        .lg-col-9 {
+            width: percentage(9/10);
+        }
+        
+        .lg-col-8 {
+            width: percentage(8/10);
+        }
+        
+        .lg-col-7 {
+            width: percentage(7/10);
+        }
+        
+        .lg-col-6 {
+            width: percentage(6/10);
+        }
+        
+        .lg-col-5 {
+            width: percentage(5/10);
+        }
+        
+        .lg-col-4 {
+            width: percentage(4/10);
+        }
+        
+        .lg-col-3 {
+            width: percentage(3/10);
+        }
+        
+        .lg-col-2 {
+            width: percentage(2/10);
+        }
+        
+        .lg-col-1 {
+            width: percentage(1/10);
+        }
+    }
+    
+    .lg-col-9 {
+        width: percentage(9/@lg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .lg-col-9 {
+            width: percentage(9/9);
+        }
+        
+        .lg-col-8 {
+            width: percentage(8/9);
+        }
+        
+        .lg-col-7 {
+            width: percentage(7/9);
+        }
+        
+        .lg-col-6 {
+            width: percentage(6/9);
+        }
+        
+        .lg-col-5 {
+            width: percentage(5/9);
+        }
+        
+        .lg-col-4 {
+            width: percentage(4/9);
+        }
+        
+        .lg-col-3 {
+            width: percentage(3/9);
+        }
+        
+        .lg-col-2 {
+            width: percentage(2/9);
+        }
+        
+        .lg-col-1 {
+            width: percentage(1/9);
+        }
+    }
+    
+    .lg-col-8 {
+        width: percentage(8/@lg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .lg-col-8 {
+            width: percentage(8/8);
+        }
+        
+        .lg-col-7 {
+            width: percentage(7/8);
+        }
+        
+        .lg-col-6 {
+            width: percentage(6/8);
+        }
+        
+        .lg-col-5 {
+            width: percentage(5/8);
+        }
+        
+        .lg-col-4 {
+            width: percentage(4/8);
+        }
+        
+        .lg-col-3 {
+            width: percentage(3/8);
+        }
+        
+        .lg-col-2 {
+            width: percentage(2/8);
+        }
+        
+        .lg-col-1 {
+            width: percentage(1/8);
+        }
+    }
+    
+    .lg-col-7 {
+        width: percentage(7/@lg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .lg-col-7 {
+            width: percentage(7/7);
+        }
+        
+        .lg-col-6 {
+            width: percentage(6/7);
+        }
+        
+        .lg-col-5 {
+            width: percentage(5/7);
+        }
+        
+        .lg-col-4 {
+            width: percentage(4/7);
+        }
+        
+        .lg-col-3 {
+            width: percentage(3/7);
+        }
+        
+        .lg-col-2 {
+            width: percentage(2/7);
+        }
+        
+        .lg-col-1 {
+            width: percentage(1/7);
+        }
+    }
+    
+    .lg-col-6 {
+        width: percentage(6/@lg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .lg-col-6 {
+            width: percentage(6/6);
+        }
+        
+        .lg-col-5 {
+            width: percentage(5/6);
+        }
+        
+        .lg-col-4 {
+            width: percentage(4/6);
+        }
+        
+        .lg-col-3 {
+            width: percentage(3/6);
+        }
+        
+        .lg-col-2 {
+            width: percentage(2/6);
+        }
+        
+        .lg-col-1 {
+            width: percentage(1/6);
+        }
+    }
+    
+    .lg-col-5 {
+        width: percentage(5/@lg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .lg-col-5 {
+            width: percentage(5/5);
+        }
+        
+        .lg-col-4 {
+            width: percentage(4/5);
+        }
+        
+        .lg-col-3 {
+            width: percentage(3/5);
+        }
+        
+        .lg-col-2 {
+            width: percentage(2/5);
+        }
+        
+        .lg-col-1 {
+            width: percentage(1/5);
+        }
+    }
+    
+    .lg-col-4 {
+        width: percentage(4/@lg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .lg-col-4 {
+            width: percentage(4/4);
+        }
+        
+        .lg-col-3 {
+            width: percentage(3/4);
+        }
+        
+        .lg-col-2 {
+            width: percentage(2/4);
+        }
+        
+        .lg-col-1 {
+            width: percentage(1/4);
+        }
+    }
+    
+    .lg-col-3 {
+        width: percentage(3/@lg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .lg-col-3 {
+            width: percentage(3/3);
+        }
+        
+        .lg-col-2 {
+            width: percentage(2/3);
+        }
+        
+        .lg-col-1 {
+            width: percentage(1/3);
+        }
+    }
+    
+    .lg-col-2 {
+        width: percentage(2/@lg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .lg-col-2 {
+            width: percentage(2/2);
+        }
+        
+        .lg-col-1 {
+            width: percentage(1/2);
+        }
+    }
+    
+    .lg-col-1 {
+        width: percentage(1/@lg-column-number);
+        padding: 0 @gutter-space 0 0; 
+        float: left;
+    }
+}
+
+@media @extralarge {
+    .xlg-col-16 {
+        width: percentage(16/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-16 {
+            width: percentage(16/16);
+        }
+        
+        .xlg-col-15 {
+            width: percentage(15/16);
+        }
+        
+        .xlg-col-14 {
+            width: percentage(14/16);
+        }
+        
+        .xlg-col-13 {
+            width: percentage(13/16);
+        }
+        
+        .xlg-col-12 {
+            width: percentage(12/16);
+        }
+        
+        .xlg-col-11 {
+            width: percentage(11/16);
+        }
+        
+        .xlg-col-10 {
+            width: percentage(10/16);
+        }
+        
+        .xlg-col-9 {
+            width: percentage(9/16);
+        }
+        
+        .xlg-col-8 {
+            width: percentage(8/16);
+        }
+        
+        .xlg-col-7 {
+            width: percentage(7/16);
+        }
+        
+        .xlg-col-6 {
+            width: percentage(6/16);
+        }
+        
+        .xlg-col-5 {
+            width: percentage(5/16);
+        }
+        
+        .xlg-col-4 {
+            width: percentage(4/16);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/16);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/16);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/16);
+        }
+    }
+    
+    .xlg-col-15 {
+        width: percentage(15/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-15 {
+            width: percentage(15/15);
+        }
+        
+        .xlg-col-14 {
+            width: percentage(14/15);
+        }
+        
+        .xlg-col-13 {
+            width: percentage(13/15);
+        }
+        
+        .xlg-col-12 {
+            width: percentage(12/15);
+        }
+        
+        .xlg-col-11 {
+            width: percentage(11/15);
+        }
+        
+        .xlg-col-10 {
+            width: percentage(10/15);
+        }
+        
+        .xlg-col-9 {
+            width: percentage(9/15);
+        }
+        
+        .xlg-col-8 {
+            width: percentage(8/15);
+        }
+        
+        .xlg-col-7 {
+            width: percentage(7/15);
+        }
+        
+        .xlg-col-6 {
+            width: percentage(6/15);
+        }
+        
+        .xlg-col-5 {
+            width: percentage(5/15);
+        }
+        
+        .xlg-col-4 {
+            width: percentage(4/15);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/15);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/15);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/15);
+        }
+    }
+    
+    .xlg-col-14 {
+        width: percentage(14/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-14 {
+            width: percentage(14/14);
+        }
+        
+        .xlg-col-13 {
+            width: percentage(13/14);
+        }
+        
+        .xlg-col-12 {
+            width: percentage(12/14);
+        }
+        
+        .xlg-col-11 {
+            width: percentage(11/14);
+        }
+        
+        .xlg-col-10 {
+            width: percentage(10/14);
+        }
+        
+        .xlg-col-9 {
+            width: percentage(9/14);
+        }
+        
+        .xlg-col-8 {
+            width: percentage(8/14);
+        }
+        
+        .xlg-col-7 {
+            width: percentage(7/14);
+        }
+        
+        .xlg-col-6 {
+            width: percentage(6/14);
+        }
+        
+        .xlg-col-5 {
+            width: percentage(5/14);
+        }
+        
+        .xlg-col-4 {
+            width: percentage(4/14);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/14);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/14);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/14);
+        }
+    }
+    
+    .xlg-col-13 {
+        width: percentage(13/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-13 {
+            width: percentage(13/13);
+        }
+        
+        .xlg-col-12 {
+            width: percentage(12/13);
+        }
+        
+        .xlg-col-11 {
+            width: percentage(11/13);
+        }
+        
+        .xlg-col-10 {
+            width: percentage(10/13);
+        }
+        
+        .xlg-col-9 {
+            width: percentage(9/13);
+        }
+        
+        .xlg-col-8 {
+            width: percentage(8/13);
+        }
+        
+        .xlg-col-7 {
+            width: percentage(7/13);
+        }
+        
+        .xlg-col-6 {
+            width: percentage(6/13);
+        }
+        
+        .xlg-col-5 {
+            width: percentage(5/13);
+        }
+        
+        .xlg-col-4 {
+            width: percentage(4/13);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/13);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/13);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/13);
+        }
+    }
+    
+    .xlg-col-12 {
+        width: percentage(12/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-12 {
+            width: percentage(12/12);
+        }
+        
+        .xlg-col-11 {
+            width: percentage(10/12);
+        }
+        
+        .xlg-col-10 {
+            width: percentage(10/12);
+        }
+        
+        .xlg-col-9 {
+            width: percentage(9/12);
+        }
+        
+        .xlg-col-8 {
+            width: percentage(8/12);
+        }
+        
+        .xlg-col-7 {
+            width: percentage(7/12);
+        }
+        
+        .xlg-col-6 {
+            width: percentage(6/12);
+        }
+        
+        .xlg-col-5 {
+            width: percentage(5/12);
+        }
+        
+        .xlg-col-4 {
+            width: percentage(4/12);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/12);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/12);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/12);
+        }
+    }
+    
+    .xlg-col-11 {
+        width: percentage(11/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-11 {
+            width: percentage(11/11);
+        }
+        
+        .xlg-col-10 {
+            width: percentage(10/11);
+        }
+        
+        .xlg-col-9 {
+            width: percentage(9/11);
+        }
+        
+        .xlg-col-8 {
+            width: percentage(8/11);
+        }
+        
+        .xlg-col-7 {
+            width: percentage(7/11);
+        }
+        
+        .xlg-col-6 {
+            width: percentage(6/11);
+        }
+        
+        .xlg-col-5 {
+            width: percentage(5/11);
+        }
+        
+        .xlg-col-4 {
+            width: percentage(4/11);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/11);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/11);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/11);
+        }
+    }
+    
+    .xlg-col-10 {
+        width: percentage(10/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-10 {
+            width: percentage(10/10);
+        }
+        
+        .xlg-col-9 {
+            width: percentage(9/10);
+        }
+        
+        .xlg-col-8 {
+            width: percentage(8/10);
+        }
+        
+        .xlg-col-7 {
+            width: percentage(7/10);
+        }
+        
+        .xlg-col-6 {
+            width: percentage(6/10);
+        }
+        
+        .xlg-col-5 {
+            width: percentage(5/10);
+        }
+        
+        .xlg-col-4 {
+            width: percentage(4/10);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/10);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/10);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/10);
+        }
+    }
+    
+    .xlg-col-9 {
+        width: percentage(9/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-9 {
+            width: percentage(9/9);
+        }
+        
+        .xlg-col-8 {
+            width: percentage(8/9);
+        }
+        
+        .xlg-col-7 {
+            width: percentage(7/9);
+        }
+        
+        .xlg-col-6 {
+            width: percentage(6/9);
+        }
+        
+        .xlg-col-5 {
+            width: percentage(5/9);
+        }
+        
+        .xlg-col-4 {
+            width: percentage(4/9);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/9);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/9);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/9);
+        }
+    }
+    
+    .xlg-col-8 {
+        width: percentage(8/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-8 {
+            width: percentage(8/8);
+        }
+        
+        .xlg-col-7 {
+            width: percentage(7/8);
+        }
+        
+        .xlg-col-6 {
+            width: percentage(6/8);
+        }
+        
+        .xlg-col-5 {
+            width: percentage(5/8);
+        }
+        
+        .xlg-col-4 {
+            width: percentage(4/8);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/8);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/8);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/8);
+        }
+    }
+    
+    .xlg-col-7 {
+        width: percentage(7/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-7 {
+            width: percentage(7/7);
+        }
+        
+        .xlg-col-6 {
+            width: percentage(6/7);
+        }
+        
+        .xlg-col-5 {
+            width: percentage(5/7);
+        }
+        
+        .xlg-col-4 {
+            width: percentage(4/7);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/7);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/7);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/7);
+        }
+    }
+    
+    .xlg-col-6 {
+        width: percentage(6/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-6 {
+            width: percentage(6/6);
+        }
+        
+        .xlg-col-5 {
+            width: percentage(5/6);
+        }
+        
+        .xlg-col-4 {
+            width: percentage(4/6);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/6);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/6);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/6);
+        }
+    }
+    
+    .xlg-col-5 {
+        width: percentage(5/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-5 {
+            width: percentage(5/5);
+        }
+        
+        .xlg-col-4 {
+            width: percentage(4/5);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/5);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/5);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/5);
+        }
+    }
+    
+    .xlg-col-4 {
+        width: percentage(4/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-4 {
+            width: percentage(4/4);
+        }
+        
+        .xlg-col-3 {
+            width: percentage(3/4);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/4);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/4);
+        }
+    }
+    
+    .xlg-col-3 {
+        width: percentage(3/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-3 {
+            width: percentage(3/3);
+        }
+        
+        .xlg-col-2 {
+            width: percentage(2/3);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/3);
+        }
+    }
+    
+    .xlg-col-2 {
+        width: percentage(2/@xlg-column-number);
+        padding: 0 @gutter-space 0 0;
+        float: left;
+        
+        .xlg-col-2 {
+            width: percentage(2/2);
+        }
+        
+        .xlg-col-1 {
+            width: percentage(1/2);
+        }
+    }
+    
+    .xlg-col-1 {
+        width: percentage(1/@xlg-column-number);
+        padding: 0 @gutter-space 0 0; 
+        float: left;
+    }
+}
