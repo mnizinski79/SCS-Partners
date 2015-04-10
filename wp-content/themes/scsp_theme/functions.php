@@ -14,4 +14,20 @@ function theme_enqueue_scripts() {
   wp_enqueue_script('scsp-main'); 
 }
 
+include_once WP_CONTENT_DIR.'/wpalchemy/MetaBox.php';   
+include_once WP_CONTENT_DIR.'/wpalchemy/MediaAccess.php';
+
+ $wpalchemy_media_access = new WPAlchemy_MediaAccess();
+
+  $npp_content_blocks = new WPAlchemy_MetaBox(array(
+    'id' => '_npp_custom_content_meta',
+    'title' => 'NPP Custom Content Blocks',
+    'template' => dirname ( __FILE__ ). '/metaboxes/npp-custom-content.php',
+    'init_action' => 'kia_metabox_init', 
+    'types' => array('page','case-study'),
+    'save_filter' => 'kia_repeating_save_filter',
+    /*'view' => WPALCHEMY_VIEW_START_CLOSED,*/
+  ));
+
+
 ?>
