@@ -54,7 +54,7 @@
                         </div>
 
                         <div class="col-8">
-                            <h3>Recent Positions <a href="/?s=&post_type=job_listing" class="btn primary">View all</a></h3>
+                            <h3>Recent Positions <!--a href="/?s=&post_type=job_listing" class="btn primary">View all</a--></h3>
 
                             <div class="container-feed-positions">
                                 <ul class="col-container">
@@ -72,18 +72,20 @@
                                         if($position_company != ""){
                                             echo '<li class="col-6">';
                                             echo '<a href="'.get_permalink($recent["ID"]).'">';
+                                            
+                                            echo '<h3>'.$recent["post_title"].'</h3>';
+                                            echo '<p>'.substr($recent["post_content"], 0,150).'...</p>';
+                                            //echo '<p>'.substr($recent["post_content"], 0,900).'</p>';
+                                            //echo '<p>'.substr( $recent["post_content"], 0, strpos( $recent["post_content"], '</p>' ) + 4 ).'</p>';
+                                            //echo the_content("",true);
+                                            
                                             echo '<h4 class="position-location">';
                                             if ($position_city !='' ){echo $position_city; }
                                             if (($position_city !='') && ($position_zipcode!='')) {echo ' : ';}
                                             if ($position_zipcode!=''){echo  '<strong>'.$position_zipcode.'</strong>';}
                                             if (($position_city =='') && ($position_zipcode=='')) {echo '&nbsp;';}
                                             echo '</h4>';
-
-                                            echo '<h3>'.$recent["post_title"].'</h3>';
-                                            echo '<p>'.substr($recent["post_content"], 0,150).'...</p>';
-                                            //echo '<p>'.substr($recent["post_content"], 0,900).'</p>';
-                                            //echo '<p>'.substr( $recent["post_content"], 0, strpos( $recent["post_content"], '</p>' ) + 4 ).'</p>';
-                                            //echo the_content("",true);
+                                            
                                             echo '</a>';
                                             echo '</li>';
                                         }

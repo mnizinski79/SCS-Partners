@@ -76,7 +76,7 @@ get_header();
                                        
                                         foreach ( $tags as $tag){
                                            if ($counter>0){echo " , ";}
-                                            echo $tag->name;
+                                            echo '<h4 class="position-location">'.$tag->name.'</h4>';
                                             $counter++;
                                         }
                                         

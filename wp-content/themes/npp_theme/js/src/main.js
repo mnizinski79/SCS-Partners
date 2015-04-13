@@ -457,9 +457,9 @@ function initPageLeads(){
         $(_modalContent).prependTo("body").wrapAll("<div id='page-modal-wrapper'></div>").css({
             "opacity":0,
             "display":"block",
-            "top": (_offset.top + _this.outerHeight()) - 50
+            "top": (_offset.top + _this.outerHeight()) - 100
         }).delay(200).animate({
-            "top": (_offset.top + _this.outerHeight()) - 30,
+            "top": (_offset.top + _this.outerHeight()) - 80,
             "opacity":1
         },850,'easeOutExpo');
         
@@ -488,11 +488,11 @@ function initPageLeads(){
                 _el = _el[0];
             }
             
-            var rect = _el.getBoundingClientRect();
+//            var rect = _el.getBoundingClientRect();
             
-           $("htm,body").animate({
-                scrollTop: $(window).scrollTop() + Math.abs(rect.bottom - $(window).innerHeight()) + 40
-            }, 550);
+//           $("htm,body").animate({
+//                scrollTop: $(window).scrollTop() + Math.abs(rect.bottom - $(window).innerHeight()) + 40
+//            }, 550);
             
             //console.log($(window).innerHeight);
         }

@@ -6,10 +6,18 @@ function addIconClass (){
 }
 
 function adjustFooter () {
-    $("footer").css("width","100%");   
+    if($("footer").css("zIndex") === "2"){
+        $("footer").css({"width":"","zIndex":"1"});  
+    } else {
+        $("footer").css({"width":"auto","zIndex":"2"}); 
+    }
 }
 
 $("document").ready(function(){
     addIconClass();
     adjustFooter();
+    
+    $(window).scroll(function(){
+        adjustFooter();
+    });
 });
