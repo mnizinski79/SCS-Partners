@@ -42,7 +42,7 @@ get_header();
                                                         'numberposts' => 2,                                                        
                                                         'orderby' => 'post_date',
                                                         'order' => 'DESC',                                                        
-                                                        'post_type' => array('job_listing','post'),
+                                                        'post_type' => array('job_listing','post','case-study'),
                                                         'post_status' => 'publish'));
                                     foreach( $recent_posts as $recent ){  
                                         //if ($recent["post_title"]==''){continue;}

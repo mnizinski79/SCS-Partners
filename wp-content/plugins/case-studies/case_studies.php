@@ -34,6 +34,7 @@ function my_custom_post_case_study() {
     'menu_position' => 5,
     'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
     'has_archive'   => true,
+    'taxonomies' => array('category', 'post_tag'),
       
   );
 
