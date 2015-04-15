@@ -32,7 +32,7 @@ if ($results){
           $feat_img = wp_get_attachment_url( get_post_thumbnail_id($result->ID));
 
           if (($feat_img) && ($feat_img !='')){
-              $my_content .= '<img src="'.$feat_img.'">';
+              $my_content .= '<div class="slide-img-container" style="background-image:url('.$feat_img.')"></div>';//<img src="'.$feat_img.'">
           }else {
                $my_content .= '<img src="img/img-upcoming.jpg">';
           }

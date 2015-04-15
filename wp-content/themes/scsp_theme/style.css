@@ -149,6 +149,20 @@ textarea {
   }
 }
 @media screen and (min-width: 0px) {
+  .carousel-wrapper .carousel-item a .slide-img-container {
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 75%;
+    background-repeat: no-repeat;
+  }
+  .carousel-wrapper .carousel-item a .slide-img-container img {
+    display: none;
+  }
   .single-testimonial {
     text-align: left;
     position: relative;

@@ -7,7 +7,7 @@
                 </div>
                 
                 <div class="prim-footer">
-                    <p class="copyright">&copy;<script>document.write(new Date().getFullYear())</script> Network Packaging Partners</p>
+                    <p class="copyright">&copy;<script>document.write(new Date().getFullYear())</script> Supply Chain Security Partners LLC</p>
                 </div>                    
             </footer>
             

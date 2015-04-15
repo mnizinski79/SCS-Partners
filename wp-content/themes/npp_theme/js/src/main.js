@@ -429,6 +429,10 @@ function initDatePicker(){
 }
 
 function initPageLeads(){
+    if($(".home-icons").length) {
+        return false;
+    }
+    
     $(".page-lead:nth-child(3n+3)").attr("data-orientation","right");
     $(".page-lead:nth-child(3n+2)").attr("data-orientation","center");
     $(".page-lead:nth-child(3n+1)").attr("data-orientation","left");

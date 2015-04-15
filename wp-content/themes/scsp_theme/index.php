@@ -55,7 +55,13 @@ get_header();
                                         echo '<a href="'.get_permalink($recent["ID"]).'">';
                                         
                                         echo '<h3>'.$recent["post_title"].'</h3>';
-                                        echo '<p>'.substr($recent["post_content"], 0,150).'...</p>'; //changed from 50 characters
+                                        
+                                        if($recent["post_excerpt"]){
+                                            echo '<p>'.$recent["post_excerpt"].'</p>';  
+                                        } else {
+                                            echo '<p>'.substr($recent["post_content"], 0,150).'...</p>'; //changed from 50 characters
+                                        }
+                                        
                                         //echo '<p>'.substr( $recent["post_content"], 0, strpos( $recent["post_content"], '</p>' ) + 4 ).'</p>'; //changed from 50 characters
                                         //echo the_content("",true);
                                         
