@@ -18,15 +18,18 @@ html.svg header h1#logo {
 body {
   font-weight: 200;
 }
-body header nav#nav-container ul#primary-nav li.current_page_item {
+body header nav#nav-container ul#primary-nav li.current_page_item,
+body header nav#nav-container ul#primary-nav li.current-menu-item {
   position: relative;
 }
-body header nav#nav-container ul#primary-nav li.current_page_item a {
+body header nav#nav-container ul#primary-nav li.current_page_item a,
+body header nav#nav-container ul#primary-nav li.current-menu-item a {
   background: none;
   color: #ed8515;
   border-bottom: 5px solid #ed8515;
 }
-body header nav#nav-container ul#primary-nav li.current_page_item a:hover {
+body header nav#nav-container ul#primary-nav li.current_page_item a:hover,
+body header nav#nav-container ul#primary-nav li.current-menu-item a:hover {
   background: none;
   color: #0f5a6a;
   border-bottom: 5px solid #0f5a6a;
@@ -149,6 +152,111 @@ textarea {
   }
 }
 @media screen and (min-width: 0px) {
+  .single_job_listing div.application .application_details form.job-manager-application-form input[type="submit"] {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 13px 15px 15px;
+    font-size: 1.125em;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    background: #65abbb;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #65abbb 0%, #1a8299 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #65abbb), color-stop(100%, #1a8299));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #65abbb 0%, #1a8299 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #65abbb 0%, #1a8299 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #65abbb 0%, #1a8299 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #65abbb 0%, #1a8299 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#65abbb', endColorstr='#1a8299', GradientType=0);
+    /* IE6-9 */
+    border: 2px solid #1f869c;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .single_job_listing div.application .application_details form.job-manager-application-form input[type="submit"]:hover {
+    background: #4993a4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #4993a4 0%, #135d6d 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4993a4), color-stop(100%, #135d6d));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #4993a4 0%, #135d6d 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #4993a4 0%, #135d6d 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #4993a4 0%, #135d6d 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #4993a4 0%, #135d6d 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='darken(#65abbb,10%)', endColorstr='darken(#1a8299,10%)', GradientType=0);
+    /* IE6-9 */
+  }
+  .single_job_listing div.application .apply-with-linkedin-details .apply-with-linkedin-submit input[type="submit"] {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 13px 15px 15px;
+    font-size: 1.125em;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    background: #65abbb;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #65abbb 0%, #1a8299 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #65abbb), color-stop(100%, #1a8299));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #65abbb 0%, #1a8299 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #65abbb 0%, #1a8299 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #65abbb 0%, #1a8299 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #65abbb 0%, #1a8299 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#65abbb', endColorstr='#1a8299', GradientType=0);
+    /* IE6-9 */
+    border: 2px solid #1f869c;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .single_job_listing div.application .apply-with-linkedin-details .apply-with-linkedin-submit input[type="submit"]:hover {
+    background: #4993a4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #4993a4 0%, #135d6d 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4993a4), color-stop(100%, #135d6d));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #4993a4 0%, #135d6d 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #4993a4 0%, #135d6d 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #4993a4 0%, #135d6d 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #4993a4 0%, #135d6d 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='darken(#65abbb,10%)', endColorstr='darken(#1a8299,10%)', GradientType=0);
+    /* IE6-9 */
+  }
+  .detail-img img {
+    border: 0px solid rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .carousel-wrapper .carousel-item a {
+    margin: 0;
+  }
   .carousel-wrapper .carousel-item a .slide-img-container {
     width: 100%;
     background-position: 50% 50%;
@@ -192,7 +300,6 @@ textarea {
     font-size: 1.5em;
     color: rgba(43, 43, 43, 0.45);
     padding-left: 10px;
-    display: inline-block;
   }
   .single-testimonial blockquote img {
     -webkit-border-radius: 50%;
@@ -744,12 +851,13 @@ textarea {
     display: block;
   }
   .secondary-content .container-feed-positions ul li {
-    padding: 0;
+    padding: 0 5% 0 0;
     padding-left: 50px;
     position: relative;
+    min-height: 230px;
   }
   .secondary-content .container-feed-positions ul li.col-6 {
-    padding: 0;
+    padding: 0 5% 0 0;
     padding-left: 50px;
   }
   .secondary-content .container-feed-positions ul li:before {
@@ -831,7 +939,7 @@ textarea {
     color: #ed8515;
   }
   .secondary-content .chosen-container {
-    width: 100%!important;
+    width: 97.5%!important;
   }
   .secondary-content .chosen-container-single .chosen-drop {
     background: #f6f6f6;
@@ -898,10 +1006,12 @@ textarea {
   }
   .carousel-wrapper .carousel-item a h3 {
     color: #158097;
+    font-size: 1.2em;
   }
   .carousel-wrapper .carousel-item a p {
     margin: 0;
     padding: 0;
+    display: none;
   }
   .carousel-wrapper .carousel-item a:hover h3 {
     color: #ed8515;
@@ -1014,6 +1124,9 @@ textarea {
     font-size: 1.0em;
   }
 }
+.gform_wrapper .chosen-container-single .chosen-search input[type="text"] {
+  background-position: 100% -20px !important;
+}
 .gform_wrapper {
   margin: 0px 0;
   max-width: 100%;
@@ -1087,7 +1200,7 @@ textarea {
     padding: 0;
   }
   .gform_wrapper form ul li .chosen-container {
-    width: 100%!important;
+    width: 97.5%!important;
   }
   .gform_wrapper form ul li .chosen-container .chosen-drop {
     border: 1px solid #d6d6d6;
@@ -1148,11 +1261,6 @@ textarea {
   .gform_wrapper form ul li .chosen-container-single .chosen-single div {
     width: 18px;
   }
-  .gform_wrapper form ul li .chosen-container-single .chosen-single div b {
-    background: url(../img/svgs/ddl-arrow.svg) 0 50% !important;
-    background-repeat: no-repeat !important;
-    background-size: 70% 70%!important;
-  }
   .gform_wrapper form ul li .chosen-container-active.chosen-with-drop .chosen-single {
     background: #eaeaea;
     border: 2px solid #e8e8e8;
@@ -1206,13 +1314,6 @@ textarea {
   .gform_wrapper form ul .gfield_checkbox label {
     display: inline-block;
     margin: 0 0 0 5px;
-  }
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {
-  .gform_wrapper form ul li .chosen-container-single .chosen-single div b {
-    background: url(../img/svgs/ddl-arrow.svg) 0 50% !important;
-    background-repeat: no-repeat !important;
-    background-size: 70% 70%!important;
   }
 }
 @media screen and (min-width: 0px) {

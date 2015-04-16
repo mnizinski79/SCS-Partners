@@ -49,7 +49,7 @@ body {
         ul {
             &#primary-nav {
 
-                li.current_page_item {
+                li.current_page_item, li.current-menu-item {
                     position: relative;
                     a {
                         //background: @secondary-color;
@@ -228,7 +228,93 @@ header {
 
 @media @small {
     
+    .single_job_listing {
+        div.application { 
+            .application_details {
+                form.job-manager-application-form {
+                    input[type="submit"] {
+                        .rounded(10px);
+                        padding: 13px 15px 15px;
+                        font-size: 1.125em;
+                        .transition(.2s);                    
+                        background: #65abbb; /* Old browsers */
+                        background: -moz-linear-gradient(top,  #65abbb 0%, #1a8299 100%); /* FF3.6+ */
+                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#65abbb), color-stop(100%,#1a8299)); /* Chrome,Safari4+ */
+                        background: -webkit-linear-gradient(top,  #65abbb 0%,#1a8299 100%); /* Chrome10+,Safari5.1+ */
+                        background: -o-linear-gradient(top,  #65abbb 0%,#1a8299 100%); /* Opera 11.10+ */
+                        background: -ms-linear-gradient(top,  #65abbb 0%,#1a8299 100%); /* IE10+ */
+                        background: linear-gradient(to bottom,  #65abbb 0%,#1a8299 100%); /* W3C */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65abbb', endColorstr='#1a8299',GradientType=0 ); /* IE6-9 */
+
+                        color: #fff;
+                        border: 2px solid #1f869c;
+                        text-transform: uppercase;
+                        color: #fff;
+
+                        &:hover {
+                            background: darken(#65abbb,10%); /* Old browsers */
+                            background: -moz-linear-gradient(top,  darken(#65abbb,10%) 0%, darken(#1a8299,10%) 100%); /* FF3.6+ */
+                            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,darken(#65abbb,10%)), color-stop(100%,darken(#1a8299,10%))); /* Chrome,Safari4+ */
+                            background: -webkit-linear-gradient(top,  darken(#65abbb,10%) 0%,darken(#1a8299,10%) 100%); /* Chrome10+,Safari5.1+ */
+                            background: -o-linear-gradient(top,  darken(#65abbb,10%) 0%,darken(#1a8299,10%) 100%); /* Opera 11.10+ */
+                            background: -ms-linear-gradient(top,  darken(#65abbb,10%) 0%,darken(#1a8299,10%) 100%); /* IE10+ */
+                            background: linear-gradient(to bottom,  darken(#65abbb,10%) 0%,darken(#1a8299,10%) 100%); /* W3C */
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken(#65abbb,10%)', endColorstr='darken(#1a8299,10%)',GradientType=0 ); /* IE6-9 */   
+                        }
+                    }
+                }
+            }
+            
+            .apply-with-linkedin-details {
+                .apply-with-linkedin-submit {
+                    input[type="submit"] {
+                        .rounded(10px);
+                        padding: 13px 15px 15px;
+                        font-size: 1.125em;
+                        .transition(.2s);                    
+                        background: #65abbb; /* Old browsers */
+                        background: -moz-linear-gradient(top,  #65abbb 0%, #1a8299 100%); /* FF3.6+ */
+                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#65abbb), color-stop(100%,#1a8299)); /* Chrome,Safari4+ */
+                        background: -webkit-linear-gradient(top,  #65abbb 0%,#1a8299 100%); /* Chrome10+,Safari5.1+ */
+                        background: -o-linear-gradient(top,  #65abbb 0%,#1a8299 100%); /* Opera 11.10+ */
+                        background: -ms-linear-gradient(top,  #65abbb 0%,#1a8299 100%); /* IE10+ */
+                        background: linear-gradient(to bottom,  #65abbb 0%,#1a8299 100%); /* W3C */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65abbb', endColorstr='#1a8299',GradientType=0 ); /* IE6-9 */
+
+                        color: #fff;
+                        border: 2px solid #1f869c;
+                        text-transform: uppercase;
+                        color: #fff;
+
+                        &:hover {
+                            background: darken(#65abbb,10%); /* Old browsers */
+                            background: -moz-linear-gradient(top,  darken(#65abbb,10%) 0%, darken(#1a8299,10%) 100%); /* FF3.6+ */
+                            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,darken(#65abbb,10%)), color-stop(100%,darken(#1a8299,10%))); /* Chrome,Safari4+ */
+                            background: -webkit-linear-gradient(top,  darken(#65abbb,10%) 0%,darken(#1a8299,10%) 100%); /* Chrome10+,Safari5.1+ */
+                            background: -o-linear-gradient(top,  darken(#65abbb,10%) 0%,darken(#1a8299,10%) 100%); /* Opera 11.10+ */
+                            background: -ms-linear-gradient(top,  darken(#65abbb,10%) 0%,darken(#1a8299,10%) 100%); /* IE10+ */
+                            background: linear-gradient(to bottom,  darken(#65abbb,10%) 0%,darken(#1a8299,10%) 100%); /* W3C */
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken(#65abbb,10%)', endColorstr='darken(#1a8299,10%)',GradientType=0 ); /* IE6-9 */   
+                           
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    
+    .detail-img {
+        
+        img {
+            border: 0px solid rgba(0,0,0,0.05);
+            .rounded(5px);
+        }
+    }
+    
     .carousel-wrapper .carousel-item a {
+        margin: 0;
         
         .slide-img-container {
             width: 100%;
@@ -277,7 +363,7 @@ header {
                 font-size: 1.5em;
                 color: fade(@primary-grey,45%);
                 padding-left: 10px;
-                display: inline-block;
+                //display: inline-block;
             }
             
             
@@ -899,12 +985,13 @@ header {
             ul {
 
                 li {
-                    padding: 0;
+                    padding: 0 5% 0 0;
                     padding-left: 50px;
                     position: relative;
+                    min-height: 230px;
 
                     &.col-6 {
-                        padding: 0;
+                        padding: 0 5% 0 0;
                         padding-left: 50px;
                     }
 
@@ -994,7 +1081,7 @@ header {
         
         
         .chosen-container {
-            width: 100%!important; 
+            width: 97.5%!important; 
 
             .chosen-drop {
                 
@@ -1090,12 +1177,14 @@ header {
 
                 h3 {
                     color: @primary-color;
+                    font-size: 1.2em;
                 }
 
                 p {
                     //color: fade(@primary-grey,90%);
                     margin: 0;
                     padding: 0;
+                    display: none;
                 }
 
                 &:hover {
@@ -1249,6 +1338,9 @@ header {
     
 }
 
+.gform_wrapper .chosen-container-single .chosen-search input[type="text"] {
+    background-position: 100% -20px!important;   
+}
 
 .gform_wrapper {
      
@@ -1311,7 +1403,7 @@ header {
                     padding: 0;
                     
                     .chosen-container {
-                        width: 100%!important; 
+                        width: 97.5%!important;   
                         
                         .chosen-drop {
                             border: 1px solid #d6d6d6;
@@ -1361,9 +1453,9 @@ header {
                                 width: 18px;
                                 
                                 b {
-                                    background: url(../img/svgs/ddl-arrow.svg) 0 50% !important;
-                                    background-repeat: no-repeat!important;
-                                    background-size: 70% 70%!important;
+                                    //background: url(../img/svgs/ddl-arrow.svg) 0 50% !important;
+                                    //background-repeat: no-repeat!important;
+                                    //background-size: 70% 70%!important;
                                 }
                             }
                         }
@@ -1447,9 +1539,9 @@ header {
                         .chosen-single {
                             div {
                                 b {
-                                    background: url(../img/svgs/ddl-arrow.svg) 0 50% !important;
-                                    background-repeat: no-repeat!important;
-                                    background-size: 70% 70%!important;
+                                    //background: url(../img/svgs/ddl-arrow.svg) 0 50% !important;
+                                    //background-repeat: no-repeat!important;
+                                    //background-size: 70% 70%!important;
                                 }
                             }
                         }
