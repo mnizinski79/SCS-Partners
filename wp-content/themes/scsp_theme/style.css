@@ -788,6 +788,7 @@ textarea {
   }
   aside {
     position: relative;
+    margin: 1em 0!important;
   }
   aside:before {
     content: "";
