@@ -25,7 +25,7 @@ if ($results){
         } 
       $my_content .= '<ul class="carousel">'; 
     foreach ($results as $result) {
-        if (($result->ID != $my_id) && ($result->post_type=='post')){
+        if (($result->ID != $my_id) && (($result->post_type=='post') || ($result->post_type=='case-study'))){
           
            $count++;
            $my_content .= '<li class="carousel-item"><a href="'.$result->guid.'">';
